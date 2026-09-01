@@ -203,6 +203,17 @@ section[id] { scroll-margin-top: var(--nav-height); }
   justify-content: space-between;
 }
 
+.navbar__logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.navbar__logo img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
 .navbar__logo { font-weight: 800; font-size: 1.15rem; }
 
 .navbar__links {
