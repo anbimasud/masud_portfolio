@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F8FAFC">
+  <title>Md Abdullah Ibna Masud | Frontend Developer Portfolio</title>
+  <meta name="description" content="Portfolio of [Md Abdullah Ibna Masud], a frontend developer who builds clean, responsive and user-friendly websites.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="navbar__logo">M.A.I Masud</a>
+
+      <div class="navbar__nav" id="primary-navigation">
+        <nav aria-label="Primary">
+          <ul class="navbar__links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section id="home" class="hero section">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1 class="hero__name">Md Abdullah Ibna Masud</h1>
+
+          <p class="hero__role">
+            CSE Graduate · AI/ML · Software · Data · IT &amp; Creative
+          </p>
+
+          <p class="hero__description">
+            I work across AI/ML, software, data, web, IT support, and creative design, with a strong interest in building practical solutions, learning new technologies, and solving real-world problems.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="assets/cv.pdf" class="btn btn--outline" download>Download CV</a>
+          </div>
+
+          <div class="hero__socials">
+            <a href="https://github.com/anbimasud" class="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/md-abdullah-ibna-masud/" class="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="hero__media reveal">
+          <div class="media-placeholder media-placeholder--avatar-lg">
+            <svg class="media-placeholder__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.5"></circle>
+              <path d="M4.5 20c0-3.6 3.4-6.5 7.5-6.5s7.5 2.9 7.5 6.5"></path>
+            </svg>
+            <img src="assets/profile.jpg" alt="Portrait of [Md Abdullah Ibna Masud]" data-fallback-img>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>About Me</h2>
+          <p class="section-subtitle">A little about who I am</p>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__media reveal">
+            <div class="media-placeholder media-placeholder--avatar-md">
+              <svg class="media-placeholder__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <circle cx="12" cy="8" r="3.5"></circle>
+                <path d="M4.5 20c0-3.6 3.4-6.5 7.5-6.5s7.5 2.9 7.5 6.5"></path>
+              </svg>
+              <img src="assets/about.jpg" alt="Photo of [Md Abdullah Ibna Masud]" data-fallback-img>
+            </div>
+          </div>
+
+          <div class="about__content reveal">
+            <p class="about__text">
+              I'm a CSE graduate interested in AI/ML, software development, data analysis, web technologies, IT support, and business systems. I enjoy building practical projects, learning new tools, and solving technical problems. I also have experience with Microsoft Office and graphic design, which helps me bring both technical and creative skills to my work.
+            </p>
+            <div class="about__stats">
+              <div class="stat-card">
+                <span class="stat-card__title">Experience</span>
+                <span class="stat-card__value">Fresher</span>
+                <span class="stat-card__label">Project &amp; Thesis Experience</span>
+              </div>
+
+              <div class="stat-card">
+                <span class="stat-card__title">Education</span>
+                <span class="stat-card__value">B.Sc. in</span>
+                <span class="stat-card__label">Computer Science &amp; Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>My Skills</h2>
+        </div>
+
+        <div class="skills__groups">
+
+          <div class="skill-group reveal">
+            <h3>AI &amp; Data</h3>
+            <ul class="chip-list">
+              <li class="chip">Python</li>
+              <li class="chip">MY SQL</li>
+              <li class="chip">Machine Learning</li>
+              <li class="chip">Deep Learning</li>
+              <li class="chip">WavLM</li>
+              <li class="chip">Speech Emotion Recognition</li>
+              <li class="chip">Pandas</li>
+              <li class="chip">NumPy</li>
+              <li class="chip">Data Analysis</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>Software &amp; Web</h3>
+            <ul class="chip-list">
+              <li class="chip">HTML</li>
+              <li class="chip">CSS</li>
+              <li class="chip">JavaScript</li>
+              <li class="chip">Node.js</li>
+              <li class="chip">REST APIs</li>
+              <li class="chip">Git</li>
+              <li class="chip">GitHub</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>IT &amp; Business</h3>
+            <ul class="chip-list">
+              <li class="chip">IT Support</li>
+              <li class="chip">Troubleshooting</li>
+              <li class="chip">Networking Basics</li>
+              <li class="chip">MIS</li>
+              <li class="chip">Microsoft Excel</li>
+              <li class="chip">Microsoft Word</li>
+              <li class="chip">Microsoft PowerPoint</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>Tools &amp; Creative</h3>
+            <ul class="chip-list">
+              <li class="chip">VS Code</li>
+              <li class="chip">Google Colab</li>
+              <li class="chip">Kaggle</li>
+              <li class="chip">Figma</li>
+              <li class="chip">Graphic Design</li>
+              <li class="chip">Logo Design</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <h2>My Projects</h2>
+      <p class="section-subtitle">A few things I've built</p>
+    </div>
+
+    <div class="projects__grid">
+
+      <!-- NoakhaliVoice AI -->
+      <article class="project-card reveal">
+
+        <div class="media-placeholder media-placeholder--card project-card__image">
+
+          <svg
+            class="media-placeholder__icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            aria-hidden="true"
+          >
+            <rect x="3" y="4.5" width="18" height="15" rx="2"></rect>
+            <circle cx="8.5" cy="10" r="1.6"></circle>
+            <path d="M3.5 16.5L8.5 12l3 3 4-4.5 4.5 5"></path>
+          </svg>
+
+          <img
+            src="assets/noakhalivoice.png"
+            alt="Preview of NoakhaliVoice AI"
+            data-fallback-img
+          >
+
+        </div>
+
+        <div class="project-card__body">
+
+          <h3>NoakhaliVoice AI</h3>
+
+          <p>
+            An AI-powered web application that analyzes Noakhali Bangla
+            speech and provides emotion predictions from uploaded or
+            recorded audio.
+          </p>
+
+          <ul class="tag-list">
+            <li class="tag">Python</li>
+            <li class="tag">PyTorch</li>
+            <li class="tag">Gradio</li>
+            <li class="tag">AI / ML</li>
+          </ul>
+
+          <div class="project-card__actions">
+
+            <a
+              href="https://huggingface.co/spaces/masudabdullah/noakhali-voice-ai"
+              class="btn btn--sm btn--primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/anbimasud/noakhali-voice-ai"
+              class="btn btn--sm btn--outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Let's Work Together</h2>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <ul class="contact-list">
+              <li>
+                <span class="contact-list__label">Email</span>
+                <a href="mailto:anbimasud1@gmail.com">anbimasud1@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-list__label">Location</span>
+                <span>Feni - 3900, Bangladesh</span>
+              </li>
+              <li>
+                <span class="contact-list__label">GitHub</span>
+                <a href="https://github.com/anbimasud" target="_blank" rel="noopener noreferrer">https://github.com/anbimasud</a>
+              </li>
+              <li>
+                <span class="contact-list__label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/md-abdullah-ibna-masud/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/md-abdullah-ibna-masud/</a>
+              </li>
+            </ul>
+          </div>
+
+          <form
+            class="contact-form reveal"
+            id="contact-form"
+            action="https://formsubmit.co/anbimasud1@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_template" value="table">
+
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#home" class="footer__logo">Md Abdullah Ibna Masud</a>
+
+      <nav aria-label="Footer">
+        <ul class="footer__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__socials">
+        <a href="https://github.com/anbimasud" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.84c.85 0 1.71.11 2.51.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .26.18.57.69.47A10.01 10.01 0 0 0 22 12C22 6.48 17.52 2 12 2z"/>
+          </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/md-abdullah-ibna-masud/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V8.99h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.46v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.56 8.99H7.1v11.46H3.56V8.99zM22.23 0H1.77C.79 0 0 .79 0 1.77v20.46C0 23.21.79 24 1.77 24h20.46c.98 0 1.77-.79 1.77-1.77V1.77C24 .79 23.21 0 22.23 0z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <p class="footer__copy">© 2026 Md Abdullah Ibna Masud. All Rights Reserved.</p>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
