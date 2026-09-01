@@ -428,12 +428,35 @@ section[id] { scroll-margin-top: var(--nav-height); }
 .chip-list { display: flex; flex-wrap: wrap; gap: 10px; }
 
 .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   background: var(--color-accent-tint);
   color: var(--color-accent-hover);
   font-weight: 700;
   font-size: 0.82rem;
   padding: 8px 14px;
   border-radius: var(--radius-pill);
+}
+
+.chip i {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.skill-symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 20px;
+  padding: 0 4px;
+  border-radius: 5px;
+  background: var(--color-accent);
+  color: #fff;
+  font-size: 0.58rem;
+  font-weight: 800;
+  line-height: 1;
 }
 
 /* 10. Projects
@@ -486,7 +509,12 @@ section[id] { scroll-margin-top: var(--nav-height); }
 .contact__grid { display: flex; flex-direction: column; gap: 40px; }
 
 .contact-list { display: flex; flex-direction: column; gap: 18px; }
-.contact-list li { display: flex; flex-direction: column; gap: 3px; }
+.contact-list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
 
 .contact-list__label {
   font-size: 0.75rem;
@@ -672,12 +700,106 @@ section[id] { scroll-margin-top: var(--nav-height); }
 
 /* ~992px and up: contact side-by-side, wider projects grid */
 @media (min-width: 992px) {
-  .container { padding-inline: 40px; }
-  .projects__grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 
-  .contact__grid { flex-direction: row; gap: 64px; }
-  .contact__info { flex: 0 0 34%; }
-  .contact-form { flex: 1; }
+  .contact__grid {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    /* দুই subsection-এর মাঝের distance */
+    gap: 64px;
+
+    /* পুরো group left/right */
+    /* transform: translateX(0); */
+  }
+
+  /* =========================
+     LEFT: Contact Information
+     ========================= */
+  .contact__info {
+    flex: 0 0 40%;
+
+    background: #F5F7FA;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    /* ভিতরের spacing */
+    padding: 28px;
+
+    /* Height control */
+    min-height: 250px;
+
+    /* Position control */
+    /* transform: translate(0, 0); */
+  }
+
+  /* Message */
+  .contact-intro {
+    margin-bottom: 22px;
+  }
+
+  .contact-intro p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* Email / Phone / Location */
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .contact-icon {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #E8EEF2;
+    color: var(--color-accent);
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .contact-list a,
+  .contact-list li > span:last-child {
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .contact-list a:hover {
+    color: var(--color-accent);
+  }
+
+
+  /* =========================
+     RIGHT: Contact Form
+     ========================= */
+  .contact-form {
+    flex: 1;
+
+    /* ভিতরের spacing */
+    padding: 28px;
+
+    /* Height control */
+    min-height: 350px;
+
+    /* Position control */
+    /* transform: translate(0, 0); */
+  }
+
 }
 
 /* ~1200px and up: more breathing room on larger desktops */
@@ -708,3 +830,5 @@ section[id] { scroll-margin-top: var(--nav-height); }
   width: 24px;
   height: 24px;
 }
+
+
